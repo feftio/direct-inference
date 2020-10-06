@@ -26,7 +26,7 @@ body {
 
 .box {
     display: block;
-    width: 500px;
+    width: 400px;
     max-height: 500px;
     background-color: #EAEAEA;
     margin: auto;
@@ -73,6 +73,7 @@ body {
 
 .result {
     display: block;
+    text-align: center;
     padding: 20px;
 }
 
