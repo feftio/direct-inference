@@ -3,44 +3,40 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Abstraction Transformation">
+    <meta name="description" content="Direct Inference Example">
     <meta name="author" content="Lik Eduard">
-    <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/style.css">
-    <title>Abstract Transformation</title>
+    <title>Direct Inference</title>
 </head>
-<body>
+<body background-image="src/img/bg.jpg">
     <div class="wrapper">
         <div class="box">
-
-            <div class="header"><img style="padding: 5px; opacity: 0.5;" height="35px" width="35px" src="src/img/paperclip-solid.svg"><p>Abstract Transformation</p></div>
+            <div class="header"><p>Direct Inference</p></div>
             <div class="task">
-                
                 <div class="result">
-
-                    <div class="object-block">
-                        <h3 class="object-header">Объект:</h3>
-                        <p class="object" id="object">Доска<p>
+                    <div class="options">
+                        <div class="class">
+                            <h3>Class:</h3>
+                            <p id="class">Wooden crafts</p>
+                        </div>
+                        <div class="object">
+                            <h3>Object:</h3>
+                            <p id="object">Plank<p>
+                        </div>
                     </div>
-
-                    <div class="class-block">
-                        <h3>Класса:</h3>
-                        <p class="class" id="class">Деревянные изделия</p>
+                    <div class="image">
+                        <img id="image" src="src/img/plank.png" width="128" height="128" alt="Image">
                     </div>
-
                 </div>
-
                 <div class="checkboxes">
-                    <label for="supports"><input type="radio" name="parts" id="supports" value="Supports">Если добавить к доске 4 угловых опоры, то получится</label>
-                    <label for="walls"><input type="radio" name="parts" id="walls" value="Walls">Если добавить к доске 4 угловых опоры и стенки, то получится</label>
-                    <label for="partitions"><input type="radio" name="parts" id="partitions" value="Partitions">Если добавить к доске 4 угловых опоры, стенки и перегородки, то получится</label>
-                    <label for="doors"><input type="radio" name="parts" id="doors">Если добавить к доске 4 угловых опоры, стенки, перегородки и дверцы, то получится</label>
+                    <label for="supports"><input type="radio" name="parts" id="supports">If you add 4 corner supports to the plank, you get</label>
+                    <label for="walls"><input type="radio" name="parts" id="walls">If you add 4 corner supports and walls to the plank, you get</label>
+                    <label for="partitions"><input type="radio" name="parts" id="partitions">If you add 4 corner supports, walls and partitions to the plant, you get</label>
+                    <label for="doors"><input type="radio" name="parts" id="doors">If you add 4 corner supports, walls, partitions and doors to the plank, you get</label>
                 </div>
-
             </div>
-
         </div>
     </div>
-<script src="src/js/abstrans.js"></script>
+<script src="src/js/direct-inference.js"></script>
 </body>
 </html>

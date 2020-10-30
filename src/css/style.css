@@ -1,3 +1,5 @@
+/* Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
 
 /* Defaults */
@@ -9,7 +11,10 @@
     padding: 0;
     font-family: 'Dosis', sans-serif;
     box-sizing: border-box;
+    color: rgb(245, 245, 245);
 }
+
+/* Wrapper */
 
 .wrapper {
     position: relative;
@@ -18,8 +23,8 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: #b3e5fc;
     overflow: auto;
+    background: linear-gradient(135deg, #EA5C54 0%, #bb6dec 100%);
 }
 
 /* General */
@@ -27,50 +32,72 @@
 .box {
     position: relative;
     display: block;
-    width: 600px;
+    width: 400px;
     margin: auto;
-    border-radius: 20px;
-    background-color: #fff;
+    background: linear-gradient(45deg, #2c3e50b3, 0%, #2c3e50b3 100%);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .1);
 }
 
-/* header */
+/* Header */
 
 .header {
     display: block;
     width: 100%;
-    background-color: #00b0ff;
-    color: #fff;
-    padding: 30px;
-    margin-top: 50px;
+    padding: 30px 0 20px 0;
+    text-align: center;
 }
 
 .header p {
     display: inline-block;
     font-size: 20px;
-    margin-left: 10px;
-    vertical-align: bottom;
 }
 
-.header img {
-    display: inline-block;
-    vertical-align: top;
-}
-
-
-
-
-
-
-
-
+/* Task */
 
 .task {
     position: relative;
     display: block;
     width: 100%;
-    min-height: 400px;
-    padding: 15px;
+    padding: 0 15px 15px 15px;
 }
+
+/* Result */
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Options */
+
+.options {
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+}
+
+.options .class {
+    padding: 10px;
+}
+
+.object .object {
+    padding: 10px;
+}
+
+/* Image */
+
+.image {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.image img {
+    display: inline-block;
+}
+
+/* Checkboxes */
 
 .checkboxes {
     margin: auto;
@@ -86,20 +113,4 @@
 
 .checkboxes label input {
     margin-right: 5px;
-}
-
-.result {
-    display: block;
-    text-align: left;
-    padding: 20px;
-}
-
-.class-block {
-    display: block;
-    padding: 10px;
-}
-
-.object-block {
-    display: block;
-    padding: 10px;
 }
